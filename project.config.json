@@ -1,0 +1,98 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"enhance": true
+	},
+	"appid": "wx5440212ee40b6734",
+	"projectname": "miniprogram",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/newGood/newGood",
+					"pathName": "pages/newGood/newGood",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "id=1583314325112_0.14789669125572824_33588273",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/manage/manage",
+					"pathName": "pages/manage/manage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userCenter/userCenter",
+					"pathName": "pages/userCenter/userCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/openapi/openapi",
+					"pathName": "pages/openapi/openapi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userConsole/userConsole",
+					"pathName": "pages/userConsole/userConsole",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/list/list",
+					"pathName": "pages/list/list",
+					"query": "id=1583314325112_0.14789669125572824_33588273",
+					"scene": null
+				}
+			]
+		}
+	}
+}

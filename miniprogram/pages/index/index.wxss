@@ -1,0 +1,132 @@
+.manage-list {
+  padding: 24rpx;
+}
+.index{
+  background-color: #ffffff;
+  padding: 24rpx 0;
+}
+.recommend,.selection{
+  background-color: #ffffff;
+  padding-top: 32rpx;
+  box-shadow: 0px 24rpx 28rpx -24rpx rgba(0, 21, 41, 0.12);
+}
+.recommend-price{
+  font-size: 38rpx;
+  color: #FD7B4D;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.recommend-cnt{
+  font-size: 32rpx;
+  color: rgba(0, 0, 0, .4);
+  font-weight: normal;
+  margin-bottom: 20rpx;
+}
+.recommend-info .recommend-words{
+  flex: 1;
+}
+.recommend-info .btn-primary{
+  width: 300rpx;
+  margin: 0;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  height: 70rpx;
+  border: none;
+}
+.recommend-info .recommend-title{
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  color: rgba(0, 0, 0, .85);
+  font-size: 38rpx;
+  text-overflow: ellipsis;
+  margin-bottom: 20rpx;
+}
+.recommend{
+  margin-bottom: 32rpx;
+}
+.recommend .recommend-info{
+  display: flex;
+  padding: 0 24rpx 60rpx;
+  align-items: flex-end;
+}
+.recommend .recommend-info .recommend-img{
+  flex: 0 0 324rpx;
+}
+.recommend .recommend-info .recommend-img image{
+  width: 300rpx;
+  height: 300rpx;
+  vertical-align: top;
+}
+.commend-title{
+  font-size: 56rpx;
+  color: rgba(0, 0, 0, .85);
+  line-height: 60rpx;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 100rpx;
+}
+.manage-list .manage-item {
+  display: inline-block;
+  padding: 24rpx 16rpx;
+  width: 318rpx;
+}
+.manage-list .manage-item .manage-show-item {
+  box-shadow: 0px 1px 4px 0px rgba(0, 21, 41, 0.12);
+}
+.manage-list .manage-item .manage-item-img {
+  position: relative;
+}
+.manage-list .manage-item .manage-item-img image {
+  width: 318rpx;
+  height: 318rpx;
+  vertical-align: top;
+}
+.manage-list .manage-item .manage-item-img .cnt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  text-align: left;
+  padding: 0 24rpx;
+  white-space: no-wrap;
+  line-height: 60rpx;
+  white-space: no-wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+}
+.manage-list .manage-item .manage-item-info {
+  padding: 24rpx;
+  font-size: 28rpx;
+  background-color: #ffffff;
+  position: relative;
+}
+.manage-list .manage-item .manage-item-info .manage-item-title {
+  margin-bottom: 8rpx;
+  padding-right: 50rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.manage-list .manage-item .manage-item-info .manage-item-price {
+  font-size: 24rpx;
+  color: #FD7B4D;
+}
+.manage-list .manage-item .manage-item-info .manage-item-price .price {
+  font-size: 34rpx;
+}
+.manage-list .manage-item .manage-item-info .icon{
+  position: absolute;
+  width: 50rpx;
+  right: 24rpx;
+  bottom: 24rpx;
+}
+.manage-list .manage-item .manage-item-info .icon image{
+  width: 100%;
+  vertical-align: text-bottom;
+}

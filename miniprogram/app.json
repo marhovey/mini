@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/newGood/newGood",
+    "pages/manage/manage",
+    "pages/detail/detail",
+    "pages/userCenter/userCenter",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "营营小铺",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#108ee9",
+    "color": "#888888",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/default/store.png",
+        "selectedIconPath": "./images/selected/store.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "全部商品",
+        "iconPath": "./images/default/all.png",
+        "selectedIconPath": "./images/selected/all.png"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "个人中心",
+        "iconPath": "./images/default/usercenter.png",
+        "selectedIconPath": "./images/selected/usercenter.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

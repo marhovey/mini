@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="form-list">
+    <block wx:for="{{formList}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+      <view class="form-item">
+        <view class="form-label">
+          <text class="">{{item.label}}</text>
+        </view>
+        <view class="form-value">
+          <view wx:if="{{item.type === 'upload'}}" class="img-list">
+            <view wx:if="{{!formData[item.key] || formData[item.key].length < item.maxLength}}" bindtap="uploadImg" data-name="{{item.key}}" class="img-item upload-btn"></view>
+            <view wx:for="{{formData[item.key]}}" wx:key="index" wx:for-index="ind" wx:for-item="src" class="img-item">
+              <image src="{{src}}"></image>
+              <icon bindtap="deleteImg" data-name="{{item.key}}" data-index="{{ind}}" color="gray" class="del-icon" type="cancel"></icon>
+            </view>
+          </view>
+          <view wx:elif="{{item.type === 'selector'}}" class="access">
+            <picker bindchange="handleChangeValue" data-name="{{item.key}}" value="{{formData[item.key]}}" range="{{item.options}}">
+              <view wx:if="{{formData[item.key]}}" class="picker">
+                {{item.options[formData[item.key]]}}
+              </view>
+              <view wx:else class="plocr">请选择{{item.label}}</view>
+            </picker>
+          </view>
+          <view wx:elif="{{item.type === 'switch'}}">
+            <switch data-name="{{item.key}}" color="#108ee9" checked="{{formData[item.key]}}" bindchange="handleChangeValue"/>
+          </view>
+          <view wx:elif="{{item.type === 'textarea'}}">
+            <textarea placeholder-class="plocr" data-name="{{item.key}}" value="{{formData[item.key]}}" bindinput="handleChangeValue" placeholder="请输入{{item.label}}"/>
+          </view>
+          <input placeholder-class="plocr"  wx:else class="form-ipt" type="{{item.type}}" value="{{formData[item.key]}}" bindinput="handleChangeValue" data-name="{{item.key}}" placeholder="请输入{{item.label}}"/>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="save-btn">
+    <button size="default" class="btn-primary" disabled="{{disabled}}" bindtap="saveGood">保存</button>
+  </view>
+</view>

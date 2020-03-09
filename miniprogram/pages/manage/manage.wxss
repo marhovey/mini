@@ -1,0 +1,114 @@
+.manage-list {
+  padding: 24rpx;
+}
+.add-item{
+  position: fixed;
+  right: 0;
+  bottom: 100rpx;
+  padding: 10rpx 24rpx;
+  line-height: 40rpx;
+  height: 40rpx;
+  background-color: #108ee9;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  color: #ffffff;
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+}
+.add-item .add-icon{
+  position: relative;
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 8rpx;
+}
+.add-item .add-icon::before{
+  position: absolute;
+  content: "";
+  width: 4rpx;
+  left: 50%;
+  top: 50%;
+  margin-left: -2rpx;
+  margin-top: -10rpx;
+  height: 20rpx;
+  background-color:#ffffff;
+}
+.add-item .add-icon::after{
+  position: absolute;
+  content: "";
+  width: 20rpx;
+  height: 4rpx;
+  left: 50%;
+  top: 50%;
+  margin-left: -10rpx;
+  margin-top: -2rpx;
+  background-color:#ffffff;
+}
+.scroll-view{
+  height: 100vh;
+}
+.manage-list .manage-item {
+  display: inline-block;
+  padding: 24rpx 16rpx;
+  width: 318rpx;
+}
+.manage-list .manage-item .manage-show-item {
+  box-shadow: 0px 1px 4px 0px rgba(0, 21, 41, 0.12);
+}
+.manage-list .manage-item .manage-item-img {
+  position: relative;
+}
+.manage-list .manage-item .manage-item-img image {
+  width: 318rpx;
+  height: 318rpx;
+  vertical-align: top;
+}
+.manage-list .manage-item .manage-item-img .cnt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  text-align: left;
+  padding: 0 24rpx;
+  white-space: no-wrap;
+  line-height: 60rpx;
+  white-space: no-wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+}
+.manage-list .manage-item .manage-item-info {
+  padding: 24rpx;
+  font-size: 28rpx;
+  background-color: #ffffff;
+  position: relative;
+}
+.manage-list .manage-item .manage-item-info .manage-item-title {
+  margin-bottom: 8rpx;
+  padding-right: 50rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.manage-list .manage-item .manage-item-info .manage-item-price {
+  font-size: 38rpx;
+  color: #FD7B4D;
+  font-weight: bold;
+}
+.manage-list .manage-item .manage-item-info .manage-item-price .price {
+  font-size: 34rpx;
+}
+.manage-list .manage-item .manage-item-info .icon{
+  position: absolute;
+  width: 50rpx;
+  right: 24rpx;
+  bottom: 24rpx;
+}
+.manage-list .manage-item .manage-item-info .icon image{
+  width: 100%;
+  vertical-align: text-bottom;
+}

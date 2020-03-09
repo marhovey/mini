@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="user-bg"></view>
+  <view class="user-info">
+    <view class="user-headimg">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="user-nickname">
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+  <view class="list">
+    <!-- <view bindtap="myFavor" class="item access">
+      <view class="icon">
+        <image mode="widthFix" src="../../images/red/favorites-fill.png"></image>
+      </view>
+      <view class="label">我的收藏</view>
+    </view> -->
+    <view class="item access">
+      <view class="icon">
+        <image mode="widthFix" src="../../images/selected/service.png"></image>
+      </view>
+      <view class="label">在线客服</view>
+      <button class="service-btn" show-message-card open-type="contact"></button>
+    </view>
+    <view wx:if="{{showManage}}" bindtap="goManage" class="item access">
+      <view class="icon">
+        <image mode="widthFix" src="../../images/selected/all.png"></image>
+      </view>
+      <view class="label">管理中心</view>
+    </view>
+  </view>
+</view>

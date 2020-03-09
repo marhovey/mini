@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="top-nav">
+    <view bindtap="changeTab" data-name="0" class="top-nav-item {{type * 1 === 0?'active':''}}">洋酒</view>
+    <view bindtap="changeTab" data-name="1" class="top-nav-item {{type * 1 === 1?'active':''}}">白酒</view>
+  </view>
+  <scroll-view enable-back-to-top scroll-y bindscrolltolower="onReachBottom" class="scroll-view">
+    <view class="manage-list">
+      <block wx:for="{{manageList}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+        <view class="manage-item">
+          <view data-name="{{item._id}}" bindtap="handleManage" class="manage-show-item">
+            <view class="manage-item-img">
+              <image src="{{item.banner[0]}}"></image>
+              <view class="cnt">销量:{{item.saleCnt}}</view>
+            </view>
+            <view class="manage-item-info">
+              <view class="manage-item-title">{{item.title}}</view>
+              <!-- <view class="manage-item-price">￥<text class="price">{{item.price}}</text></view> -->
+              <!-- <view catchtap="addFavor" data-name="{{item._id}}" data-index="{{index}}" class="icon">
+                <image mode="widthFix" src="../../images/{{item.favor?'red/favorites-fill.png':'selected/favorites.png'}}"></image>
+              </view> -->
+              <view catchtap="tapIcon" class="icon">
+                <image mode="widthFix" src="../../images/selected/service.png"></image>
+                <button class="service-btn" show-message-card open-type="contact"></button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view wx:if="{{!manageList.length}}" class="no-item">暂无商品~</view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,27 @@
+<view class="container">
+  <scroll-view enable-back-to-top	scroll-y bindscrolltolower="onReachBottom" class="scroll-view">
+    <view class="manage-list">
+      <block wx:for="{{manageList}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+        <view class="manage-item">
+          <view data-name="{{item._id}}" bindtap="handleManage" class="manage-show-item">
+            <view class="manage-item-img">
+              <image mode="aspectFill" src="{{item.banner[0]}}"></image>
+              <view class="cnt">销量:{{item.saleCnt}}</view>
+            </view>
+            <view class="manage-item-info">
+              <view class="manage-item-title">{{item.title}}</view>
+              <!-- <view class="manage-item-price">￥<text class="price">{{item.price}}</text></view> -->
+              <view catchtap="deleteItem" data-index="{{index}}" data-name="{{item._id}}" class="icon">
+                <image mode="widthFix" src="../../images/red/ashbin.png"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view bindtap="addItem" class="add-item">
+    <view class="add-icon"></view>
+    新增商品
+  </view>
+</view>

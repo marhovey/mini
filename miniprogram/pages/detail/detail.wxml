@@ -1,0 +1,48 @@
+<view class="container">
+  <view class="banner">
+    <swiper class="swiper" indicator-dots	
+      autoplay circular interval="2000" duration="1000">
+      <block wx:for="{{goodInfo.banner}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+        <swiper-item>
+          <view bindtap="previewImg" data-name="{{item}}" class="swiper-item">
+            <image mode="aspectFill" src="{{item}}"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="good-info">
+    <!-- <view class="price">
+      ￥{{goodInfo.price}}
+    </view> -->
+    <view class="title">
+      {{goodInfo.title}}
+    </view>
+    <view class="sale-cnt">
+      销量：{{goodInfo.saleCnt}}
+    </view>
+    <view class="good-desc">
+      商品简介：{{goodInfo.descWords}}
+    </view>
+    <view class="title">
+      商品详情
+    </view>
+    <view class="detail">
+      <image mode="widthFix" src="{{goodInfo.desc[0]}}"></image>
+    </view>
+  </view>
+  <view class="button-list">
+    <view bindtap="goHome" class="back-home button-item">
+      <image mode="widthFix" src="../../images/selected/store.png"></image>
+      <view class="word">返回首页</view>
+    </view>
+    <view class="share button-item">
+      <image mode="widthFix" src="../../images/selected/share.png"></image>
+      <view class="word">分享商品</view>
+      <button class="service-btn" open-type="share"></button>
+    </view>
+    <view class="service">
+      <button class="btn-primary" show-message-card open-type="contact">联系客服</button>
+    </view>
+  </view>
+</view>

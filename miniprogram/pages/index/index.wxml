@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container index">
+  <!-- <view class="banner">
+    <swiper indicator-dots
+      autoplay circular interval="2000" duration="1000">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item {{item}}"></view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view> -->
+  <view class="recommend">
+    <view class="commend-title">推荐</view>
+    <view bindtap="handleManage" data-name="{{recommendInfo._id}}" class="recommend-info">
+      <view class="recommend-img">
+        <image mode="aspectFill" src="{{recommendInfo.banner[0]}}"></image>
+      </view>
+      <view catchtap="iconTap" class="recommend-words">
+        <view class="recommend-title">{{recommendInfo.title}}</view>
+        <!-- <view class="recommend-price">￥{{recommendInfo.price}}</view> -->
+        <view class="recommend-cnt">销量{{recommendInfo.saleCnt}}</view>
+        <button class="btn-primary" show-message-card open-type="contact">联系客服</button>
+      </view>
+    </view>
+  </view>
+  <view class="selection">
+    <view class="commend-title">精选</view>
+    <view class="manage-list">
+      <block wx:for="{{manageList}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+        <view class="manage-item">
+          <view data-name="{{item._id}}" bindtap="handleManage" class="manage-show-item">
+            <view class="manage-item-img">
+              <image src="{{item.banner[0]}}"></image>
+              <view class="cnt">销量:{{item.saleCnt}}</view>
+            </view>
+            <view class="manage-item-info">
+              <view class="manage-item-title">{{item.title}}</view>
+              <!-- <view class="manage-item-price">￥<text class="price">{{item.price}}</text></view> -->
+              <!-- <view catchtap="addFavor" data-name="{{item._id}}" data-index="{{index}}" class="icon">
+                <image mode="widthFix" src="../../images/{{item.favor?'red/favorites-fill.png':'selected/favorites.png'}}"></image>
+              </view> -->
+              <view catchtap="tapIcon" class="icon">
+                <image mode="widthFix" src="../../images/selected/service.png"></image>
+                <button class="service-btn" show-message-card open-type="contact"></button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

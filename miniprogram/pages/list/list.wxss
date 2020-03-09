@@ -1,0 +1,94 @@
+.manage-list {
+  padding: 24rpx;
+}
+.scroll-view{
+  height: calc(100vh - 80rpx);
+}
+.top-nav{
+  display: flex;
+  align-items: center;
+}
+.top-nav-item{
+  flex: 1;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid transparent;
+  color: rgba(0, 0, 0, .85);
+}
+.top-nav-item.active{
+  color: #108ee9;
+  border-color: #108ee9;
+}
+.manage-list .manage-item {
+  display: inline-block;
+  padding: 24rpx 16rpx;
+  width: 318rpx;
+}
+.manage-list .manage-item .manage-show-item {
+  box-shadow: 0px 1px 4px 0px rgba(0, 21, 41, 0.12);
+}
+.manage-list .manage-item .manage-item-img {
+  position: relative;
+}
+.manage-list .manage-item .manage-item-img image {
+  width: 318rpx;
+  height: 318rpx;
+  vertical-align: top;
+}
+.manage-list .manage-item .manage-item-img .cnt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  text-align: left;
+  padding: 0 24rpx;
+  white-space: no-wrap;
+  line-height: 60rpx;
+  white-space: no-wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+}
+.manage-list .manage-item .manage-item-info {
+  padding: 24rpx;
+  font-size: 28rpx;
+  background-color: #ffffff;
+  position: relative;
+}
+.manage-list .manage-item .manage-item-info .manage-item-title {
+  margin-bottom: 8rpx;
+  padding-right: 50rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.manage-list .no-item{
+  font-size: 34rpx;
+  color: rgba(0, 0, 0, .2);
+  line-height: 50rpx;
+  text-align: center;
+}
+.manage-list .manage-item .manage-item-info .manage-item-price {
+  font-size: 38rpx;
+  color: #FD7B4D;
+  font-weight: bold;
+}
+.manage-list .manage-item .manage-item-info .manage-item-price .price {
+  font-size: 34rpx;
+}
+.manage-list .manage-item .manage-item-info .icon{
+  position: absolute;
+  width: 50rpx;
+  right: 24rpx;
+  bottom: 24rpx;
+}
+.manage-list .manage-item .manage-item-info .icon image{
+  width: 100%;
+  vertical-align: text-bottom;
+}
